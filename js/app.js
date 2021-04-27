@@ -59,7 +59,7 @@ function quizGame(){
 
 function displayResults(correctlyAnswered){
     e = document.getElementById("displayResults");
-    e.innerHTML = "<div class = \"main-item\" id=\"container-7\"><h2>"+correctlyAnswered+"</h2></div>";
+    e.innerHTML = "<div class = \"main-item\" id=\"container-7\"><h1>" + correctlyAnswered + "</h1><br><h2>" + username + "\'s High Score</h2></div>";
 
 }
 

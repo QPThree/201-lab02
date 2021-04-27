@@ -7,10 +7,15 @@ header {
     text-align: center;
     margin: 0 10% 0 7%;
 }
-
+ul{
+    text-align: right;
+}
 .nav {
     display: inline;
+    margin-right: 2%;
+    
 }
+
 .main-container {
     display: grid;
     grid-template-columns: 25% 50% 25%;
@@ -28,18 +33,26 @@ header {
     padding: 20px;
 }
 
-#container-1,
+#greeting{
+    text-align: left;
+}
+
 #container-2,
 #container-3,
 #container-4,
 #container-5,
-#container-6,
-#container-7{
-
+#container-6{
     border-radius: 10px;
     box-shadow: 0px 15px 30px rgb(0 0 0 / 15%);
     background-color: #fff;
 }
+
+#container-7{
+    border-radius: 10px;
+    box-shadow: 0px 15px 30px rgb(238, 223, 18);
+    background-color: #fff;
+}
+
 
 button {
     background: none;
