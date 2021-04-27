@@ -5,7 +5,6 @@ body{
 
 header {
     text-align: center;
-
     margin: 0 10% 0 7%;
 }
 
@@ -14,7 +13,13 @@ li {
 }
 .main-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 25% 50% 25%;
+    grid-row-gap: 50px;
+}
+
+.center-container{
+    display: grid;
+    grid-template-columns: auto;
     grid-row-gap: 50px;
 }
 
@@ -23,12 +28,12 @@ li {
     padding: 20px;
 }
 
-#container-b,
+#container-1,
 #container-2,
+#container-3,
+#container-4,
 #container-5,
-#container-8,
-#container-11,
-#container-14 {
+#container-6 {
 
     border-radius: 10px;
     box-shadow: 0px 15px 30px rgb(0 0 0 / 15%);
