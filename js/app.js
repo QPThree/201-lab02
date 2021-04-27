@@ -1,7 +1,6 @@
 'user strict'
 //global vars
 var username;
-var answersPoss = ['yes', 'y', 'no', 'n'];
 var questionBank = [
     'Did Quen Grow up in Maine?',
     'Did Quen go to the University of New Hampshire?', 
@@ -27,33 +26,34 @@ function greeting(){
 }
 
 //5 yes / no questions
-//
+//questions and answers come from  bank arrays
 function quizGame(){
     correct = 0;
+    var answer;
     for (var i = 0; i < 5; i++){
-        var answer = prompt(questionBank[i]);
-        if(validateAnswer(answer)) {
-            console.log('This returned true');
-            if (answer.startsWith(answerBank[i])) {
-                correct = correct + 1;
-                console.log('You answer bank is working as planned');
-                //alert will go here to say they were correct
-            }
+        answer = prompt(questionBank[i]).toLowerCase();
+        while (answer != 'y' && answer != 'yes' && answer != 'no' && answer != 'n'){
+            answer = prompt('Please enter a valid respone');
+        }
+        if (answer.startsWith(answerBank[i])) {
+            correct = correct + 1;
+            console.log('Got question right');
+            //alert will go here to say they were correct
         }
         else{
-            console.log('This returned false');
+            console.log('Got question Wrong');
             //alert will go here to say they were wrong
         }
     }
-}
-
-//Checks answer against possibilities y,yes,n,no
-
-function validateAnswer(answer){
-    if(answersPoss.includes(answer.toLowerCase())){
-        return true;
+    if (correct > 4){
+        console.log('Smoked it!');
+    }
+    else if(correct > 2 && correct <= 4){
+        console.log('Decent job ' + username + ' You answered ' + correct + ' correctly');
     }
     else{
-        return false;
+        console.log('Yikes! Were you even paying attention?');
     }
+    
 }
+
