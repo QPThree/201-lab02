@@ -1,0 +1,25 @@
+body{
+    background-color: #fff;
+    color:rgba(117, 117, 117, 0.89);
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 50px;
+}
+
+.main-item{
+    text-align: center;
+    padding: 20px;
+}
+
+#container-2,
+#container-5,
+#container-8,
+#container-11 {
+
+    border-radius: 10px;
+    box-shadow: 0px 15px 30px rgb(0 0 0 / 15%);
+    background-color: #fff;
+}
