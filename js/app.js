@@ -54,6 +54,12 @@ function quizGame(){
     else{
         console.log('Yikes! Were you even paying attention?');
     }
-    
+    displayResults(correct);
+}
+
+function displayResults(correctlyAnswered){
+    e = document.getElementById("displayResults");
+    e.innerHTML = "<div class = \"main-item\" id=\"container-7\"><h2>"+correctlyAnswered+"</h2></div>";
+
 }
 
