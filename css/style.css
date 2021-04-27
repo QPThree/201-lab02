@@ -3,6 +3,12 @@ body{
     color:rgba(117, 117, 117, 0.89);
 }
 
+header {
+    text-align: center;
+
+    margin: 0 10% 0 7%;
+}
+
 .main-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -14,10 +20,12 @@ body{
     padding: 20px;
 }
 
+#container-b,
 #container-2,
 #container-5,
 #container-8,
-#container-11 {
+#container-11,
+#container-14 {
 
     border-radius: 10px;
     box-shadow: 0px 15px 30px rgb(0 0 0 / 15%);
