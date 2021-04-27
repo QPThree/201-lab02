@@ -34,3 +34,10 @@ li {
     box-shadow: 0px 15px 30px rgb(0 0 0 / 15%);
     background-color: #fff;
 }
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+}
