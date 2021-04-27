@@ -8,7 +8,7 @@ header {
     margin: 0 10% 0 7%;
 }
 
-li {
+.nav {
     display: inline;
 }
 .main-container {
