@@ -10,12 +10,15 @@ answer = answer.toLocaleLowerCase();
 if (answer === 'n' || answer === 'no'){
   console.log('correct');
   correct = correct + 1;
-
   //alert('You got it correct, ' + userName + '!')
 }
-else{
+else if (answer === 'y' || answer === 'yes'){
   console.log('Wrong');
   //alert('Ouch! Better luck on the next one.')
+}
+else{
+  console.log('Non accepted answer submitted');
+  //alert('Wow, really?');
 }
 
 
@@ -27,9 +30,13 @@ if (answer === 'y' || answer === 'yes'){
   correct = correct + 1;
   //alert('You got it correct, ' + userName + '!')
 }
-else{
+else if (answer === 'n' || answer === 'no'){
   console.log('Wrong');
   //alert('Ouch! Better luck on the next one.')
+}
+else{
+  console.log('Non accepted answer submitted');
+  //alert('Wow, really?');
 }
 
 //question3
@@ -40,9 +47,12 @@ if (answer === 'n' || answer === 'no'){
   correct = correct + 1;
   //alert('You got it correct, ' + userName + '!')
 }
-else{
+else if (answer === 'y' || answer === 'yes'){
   console.log('Wrong');
   //alert('Ouch! Better luck on the next one.')
+}else{
+  console.log('Non accepted answer submitted');
+  //alert('Wow, really?');
 }
 
 //question4
@@ -53,9 +63,12 @@ if (answer === 'n' || answer === 'no'){
   correct = correct + 1;
   //alert('You got it correct, ' + userName + '!')
 }
-else{
+else if (answer === 'y' || answer === 'yes'){
   console.log('Wrong');
   //alert('Ouch! Better luck on the next one.')
+}else{
+  console.log('Non accepted answer submitted');
+  //alert('Wow, really?');
 }
 
 //question5
@@ -66,9 +79,13 @@ if (answer === 'y' || answer === 'yes'){
   correct = correct + 1;
   //alert('You got it correct, ' + userName + '!')
 }
-else{
+else if (answer === 'n' || answer === 'no'){
   console.log('Wrong');
   //alert('Ouch! Better luck on the next one.')
+}
+else{
+  console.log('Non accepted answer submitted');
+  //alert('Wow, really?');
 }
 
 
