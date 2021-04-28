@@ -7,13 +7,10 @@ header {
     text-align: center;
     margin: 0 10% 0 7%;
 }
-ul{
-    text-align: right;
-}
+
 .nav {
     display: inline;
     margin-right: 2%;
-    
 }
 
 .main-container {
