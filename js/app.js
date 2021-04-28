@@ -1,6 +1,7 @@
 'user strict'
 //global vars
 var username;
+//questions and related answers in banks must coordinate via index
 var questionBank = [
     'Did Quen Grow up in Maine?',
     'Did Quen go to the University of New Hampshire?', 
@@ -22,11 +23,14 @@ function greeting(){
     while(username == null || username == ''){
         username = prompt('Please enter a valid username!');
     }
-    return 'Hello ' + username + '!';
+    return 'Hello ' + username + '! Welcome to my 201-Lab02 Site!';
 }
 
-//5 yes / no questions
+//5 yes or no questions
 //questions and answers come from  bank arrays
+//answers are validated with while loop
+//end of function will call displayResults function
+//TODO: Change console.logs to alerts for user to see
 function quizGame(){
     correct = 0;
     var answer;
@@ -57,6 +61,7 @@ function quizGame(){
     displayResults(correct);
 }
 
+//function gets element from html and writes the users score into it with HTML
 function displayResults(correctlyAnswered){
     e = document.getElementById("displayResults");
     e.innerHTML = "<div class = \"main-item\" id=\"container-7\"><h1>" + correctlyAnswered + "</h1><br><h2>" + username + "\'s High Score</h2></div>";
