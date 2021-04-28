@@ -1,4 +1,4 @@
-'user strict'
+'use strict';
 //global vars
 var username;
 //questions and related answers in banks must coordinate via index
