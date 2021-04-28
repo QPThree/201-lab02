@@ -8,6 +8,15 @@ header {
     margin: 0 10% 0 7%;
 }
 
+.main-header{
+    text-align: left;
+    margin-left: 25%;
+}
+
+nav{
+    text-align: right;
+}
+
 .nav {
     display: inline;
     margin-right: 2%;
