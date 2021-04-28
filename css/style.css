@@ -39,6 +39,9 @@ nav{
     padding: 20px;
 }
 
+.info {
+    text-align: left;
+}
 #greeting{
     text-align: left;
 }
