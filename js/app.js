@@ -8,17 +8,17 @@ answer = answer.toLocaleLowerCase();
 
 //question1
 if (answer === 'n' || answer === 'no'){
-  console.log('correct');
+  //console.log('correct');
   correct = correct + 1;
-  //alert('You got it correct, ' + userName + '!')
+  alert('You got it correct, ' + userName + '!');
 }
 else if (answer === 'y' || answer === 'yes'){
-  console.log('Wrong');
-  //alert('Ouch! Better luck on the next one.')
+  //console.log('Wrong');
+  alert('Ouch! Better luck on the next one.');
 }
 else{
-  console.log('Non accepted answer submitted');
-  //alert('Wow, really?');
+  //console.log('Non accepted answer submitted');
+  alert('Wow, really?');
 }
 
 
@@ -26,33 +26,33 @@ else{
 answer = prompt('Did Quen go to the University of New Hampshire?');
 answer = answer.toLocaleLowerCase();
 if (answer === 'y' || answer === 'yes'){
-  console.log('correct');
+  //console.log('correct');
   correct = correct + 1;
-  //alert('You got it correct, ' + userName + '!')
+  alert('You got it correct, ' + userName + '!');
 }
 else if (answer === 'n' || answer === 'no'){
-  console.log('Wrong');
-  //alert('Ouch! Better luck on the next one.')
+  //console.log('Wrong');
+  alert('Ouch! Better luck on the next one.');
 }
 else{
-  console.log('Non accepted answer submitted');
-  //alert('Wow, really?');
+  //console.log('Non accepted answer submitted');
+  alert('Wow, really?');
 }
 
 //question3
 answer = prompt('Is Quen planning to take Javascript 401?');
 answer = answer.toLocaleLowerCase();
 if (answer === 'n' || answer === 'no'){
-  console.log('correct');
+  //console.log('correct');
   correct = correct + 1;
-  //alert('You got it correct, ' + userName + '!')
+  alert('You got it correct, ' + userName + '!');
 }
 else if (answer === 'y' || answer === 'yes'){
-  console.log('Wrong');
-  //alert('Ouch! Better luck on the next one.')
+  //console.log('Wrong');
+  alert('Ouch! Better luck on the next one.');
 }else{
-  console.log('Non accepted answer submitted');
-  //alert('Wow, really?');
+  //console.log('Non accepted answer submitted');
+  alert('Wow, really?');
 }
 
 //question4
@@ -60,37 +60,33 @@ answer = prompt('Did Quen mention snowboarding?');
 answer = answer.toLocaleLowerCase();
 if (answer === 'n' || answer === 'no'){
   console.log('correct');
-  correct = correct + 1;
-  //alert('You got it correct, ' + userName + '!')
+  //correct = correct + 1;
+  alert('You got it correct, ' + userName + '!');
 }
 else if (answer === 'y' || answer === 'yes'){
-  console.log('Wrong');
-  //alert('Ouch! Better luck on the next one.')
+  //console.log('Wrong');
+  alert('Ouch! Better luck on the next one.');
 }else{
-  console.log('Non accepted answer submitted');
-  //alert('Wow, really?');
+  //console.log('Non accepted answer submitted');
+  alert('Wow, really?');
 }
 
 //question5
 answer = prompt('Was Quen\'s major kinesiology?');
 answer = answer.toLocaleLowerCase();
 if (answer === 'y' || answer === 'yes'){
-  console.log('correct');
+  //console.log('correct');
   correct = correct + 1;
-  //alert('You got it correct, ' + userName + '!')
+  alert('You got it correct, ' + userName + '!');
 }
 else if (answer === 'n' || answer === 'no'){
-  console.log('Wrong');
-  //alert('Ouch! Better luck on the next one.')
+  //console.log('Wrong');
+  alert('Ouch! Better luck on the next one.');
 }
 else{
-  console.log('Non accepted answer submitted');
-  //alert('Wow, really?');
+  //console.log('Non accepted answer submitted');
+  alert('Wow, really?');
 }
-
-
-
-
 console.log(userName + ', your score:', correct);
 
 
