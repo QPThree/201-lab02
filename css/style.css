@@ -24,6 +24,14 @@ ul {
     margin-left: 2%;
 }
 
+ol {
+    list-style-type: lower-roman;
+}
+
+.nfl{
+    margin-left:7%;
+}
+
 .main-header{
     text-align: left;
     margin-left: 25%;
@@ -59,6 +67,7 @@ nav{
 .info {
     text-align: left;
 }
+
 #greeting{
     text-align: left;
 }
@@ -67,7 +76,8 @@ nav{
 #container-3,
 #container-4,
 #container-5,
-#container-6{
+#container-6,
+#container-10{
     border-radius: 10px;
     box-shadow: 0px 15px 30px rgb(0 0 0 / 15%);
     background-color: #fff;
@@ -78,7 +88,6 @@ nav{
     box-shadow: 0px 15px 30px rgb(238, 223, 18);
     background-color: #fff;
 }
-
 
 button {
     background: none;
