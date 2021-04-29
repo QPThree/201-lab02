@@ -87,8 +87,8 @@ else{
   //console.log('Non accepted answer submitted');
   alert('Wow, really?');
 }
-console.log(userName + ', your score:', correct);
-
+//console.log(userName + ', your score:', correct);
+alert(userName + ', your score:', correct);
 
 
 
