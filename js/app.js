@@ -4,7 +4,7 @@ let correct = 0;
 alert('You are about to take a Quiz about me, Quen.  All questions are yes or no answers.  Please answer as such!');
 
 let answer = prompt('Is Quen from Maine?');
-answer = answer.toLocaleLowerCase();
+answer = answer.toLowerCase();
 
 //question1
 if (answer === 'n' || answer === 'no'){
@@ -24,7 +24,7 @@ else{
 
 //question2
 answer = prompt('Did Quen go to the University of New Hampshire?');
-answer = answer.toLocaleLowerCase();
+answer = answer.toLowerCase();
 if (answer === 'y' || answer === 'yes'){
   //console.log('correct');
   correct = correct + 1;
@@ -41,7 +41,7 @@ else{
 
 //question3
 answer = prompt('Is Quen planning to take Javascript 401?');
-answer = answer.toLocaleLowerCase();
+answer = answer.toLowerCase();
 if (answer === 'n' || answer === 'no'){
   //console.log('correct');
   correct = correct + 1;
@@ -57,7 +57,7 @@ else if (answer === 'y' || answer === 'yes'){
 
 //question4
 answer = prompt('Did Quen mention snowboarding?');
-answer = answer.toLocaleLowerCase();
+answer = answer.toLowerCase();
 if (answer === 'n' || answer === 'no'){
   console.log('correct');
   //correct = correct + 1;
@@ -73,7 +73,7 @@ else if (answer === 'y' || answer === 'yes'){
 
 //question5
 answer = prompt('Was Quen\'s major kinesiology?');
-answer = answer.toLocaleLowerCase();
+answer = answer.toLowerCase();
 if (answer === 'y' || answer === 'yes'){
   //console.log('correct');
   correct = correct + 1;
@@ -94,7 +94,8 @@ console.log(userName + ', your score:', correct);
 
 
 
-
+//reach code is below
+//may use in future iterations
 
 // //global vars
 // let username;
