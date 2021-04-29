@@ -2,7 +2,11 @@
 
 ## About Me
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+About-me app prompts the user with 5 yes or no questions "about-me".  The user will have entered a username which the program will occassionally use to address the user.  
+
+A 6th question is a higher / lower game for the user to play.  Finally, at the end, the user is given their score.  
+
+The page has main blocks of information down the center of the page that give the user information about me.  Answers to the quiz question can be found in these blocks.  
 
 ### Author: Quentin P Young III
 
