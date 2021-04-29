@@ -88,7 +88,7 @@ else{
   alert('Wow, really?');
 }
 //console.log(userName + ', your score:', correct);
-alert(userName + ', your score:', + correct);
+alert(userName + ', your score:' + correct);
 
 
 
