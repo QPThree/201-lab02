@@ -1,15 +1,21 @@
 'use strict';
-let userName = prompt('Welcome to my page!  What is your name?');
-let correct = 0;
+let globalCorrect = 0;
+let userName = prompt('Hello Please enter your name!');
 alert('You are about to take a Quiz about me, Quen.  All questions are yes or no answers.  Please answer as such!');
+
+
+//verify username
+while (userName === null || userName === ''){
+  userName = prompt('Please enter a valid userName');
+}
+
 
 let answer = prompt('Is Quen from Maine?');
 answer = answer.toLowerCase();
-
 //question1
 if (answer === 'n' || answer === 'no'){
   //console.log('correct');
-  correct = correct + 1;
+  globalCorrect = globalCorrect + 1;
   alert('You got it correct, ' + userName + '!');
 }
 else if (answer === 'y' || answer === 'yes'){
@@ -27,7 +33,7 @@ answer = prompt('Did Quen go to the University of New Hampshire?');
 answer = answer.toLowerCase();
 if (answer === 'y' || answer === 'yes'){
   //console.log('correct');
-  correct = correct + 1;
+  globalCorrect = globalCorrect + 1;
   alert('You got it correct, ' + userName + '!');
 }
 else if (answer === 'n' || answer === 'no'){
@@ -44,7 +50,7 @@ answer = prompt('Is Quen planning to take Javascript 401?');
 answer = answer.toLowerCase();
 if (answer === 'n' || answer === 'no'){
   //console.log('correct');
-  correct = correct + 1;
+  globalCorrect = globalCorrect + 1;
   alert('You got it correct, ' + userName + '!');
 }
 else if (answer === 'y' || answer === 'yes'){
@@ -61,6 +67,7 @@ answer = answer.toLowerCase();
 if (answer === 'n' || answer === 'no'){
   console.log('correct');
   //correct = correct + 1;
+  globalCorrect = globalCorrect + 1;
   alert('You got it correct, ' + userName + '!');
 }
 else if (answer === 'y' || answer === 'yes'){
@@ -76,7 +83,7 @@ answer = prompt('Was Quen\'s major kinesiology?');
 answer = answer.toLowerCase();
 if (answer === 'y' || answer === 'yes'){
   //console.log('correct');
-  correct = correct + 1;
+  globalCorrect = globalCorrect + 1;
   alert('You got it correct, ' + userName + '!');
 }
 else if (answer === 'n' || answer === 'no'){
@@ -104,6 +111,7 @@ while (wrong !== 4 && correctAge === 0){
     console.log('Answer Guessed Correctly');
     alert('Nicely Done!');
     correctAge = 1;
+    globalCorrect = globalCorrect + 1;
   }
   else if(parseInt(answer) < 23){
     wrong = wrong + 1;
@@ -112,7 +120,7 @@ while (wrong !== 4 && correctAge === 0){
   else if(parseInt(answer)){
     wrong = wrong + 1;
     alert(`Too high! You have ${4 - wrong} guesses remaining`);
-  }
+  } 
   i = i+1;
 }
 if (wrong === 4){
@@ -122,20 +130,23 @@ if (wrong === 4){
 //question 7
 //array to store possible answers
 //for loops: 1. To count chances 2. To loop through the array, comparing the users guess with list of accepted answer
-let sbCorrect = 0;
+
 let answerPossibilities = ['36', '38', '39', '49', '51', '53', '55'];
-alert('Tom Brady Quiz alert');
+alert('Tom Brady Has won 7 Super Bowls.  Super Bowls are numbered from 1-55 (and counting).  Guess which Super Bowls Tom has won by entering integers between 1 and 55.  Go luck!');
 for (let k = 0; k < 6; k++){
-  answer = prompt(`Guess ${k + 1}`)
+  answer = prompt(`Guess ${k + 1}`);
   for (let j = 0; j < answerPossibilities.length; j++){
     if (answer === answerPossibilities[j]){
       console.log('Correct Super Bowl Guessed');
-      sbCorrect = sbCorrect +1;
-      console.log(sbCorrect);
+      alert('Correct! Nicely done.');
+      globalCorrect = globalCorrect + 1;
+      console.log(globalCorrect);
+      k = 10; //sets k to 10 to break the loop.  Couldnt get 'break;' to work
     }
   }
 }
-console.log(`You answered ${sbCorrect} correct!`);
+alert(`Correct answers were: ${answerPossibilities}`);
+alert(`Your total correct out of 7 questions is: ${globalCorrect}`);
 
 
 
