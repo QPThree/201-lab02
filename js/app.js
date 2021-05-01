@@ -104,7 +104,7 @@ else{
 let wrong = 0;
 let correctAge = 0;
 let i = 1;
-alert('You are about to take a quiz with 4 chances to guess what age I started college!');
+alert('Next, you have 4 chances to guess what age I finished college!');
 while (wrong !== 4 && correctAge === 0){
   answer = prompt(`Guess ${i}:`);
   if (parseInt(answer) === 23){
@@ -125,6 +125,7 @@ while (wrong !== 4 && correctAge === 0){
 }
 if (wrong === 4){
   console.log('The correct answer was 23!');
+  alert('Too bad, the correct answer was 23!');
 }
 
 //question 7
