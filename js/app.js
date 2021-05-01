@@ -88,7 +88,55 @@ else{
   alert('Wow, really?');
 }
 //console.log(userName + ', your score:', correct);
-alert(userName + ', your score:' + correct);
+//alert(userName + ', your score:' + correct);
+
+
+//question 6
+//for loop track number of guesses
+//had to convert answer to int via parseint for the strictly equals 23 requirement
+let wrong = 0;
+let correctAge = 0;
+let i = 1;
+alert('You are about to take a quiz with 4 chances to guess what age I started college!');
+while (wrong !== 4 && correctAge === 0){
+  answer = prompt(`Guess ${i}:`);
+  if (parseInt(answer) === 23){
+    console.log('Answer Guessed Correctly');
+    alert('Nicely Done!');
+    correctAge = 1;
+  }
+  else if(parseInt(answer) < 23){
+    wrong = wrong + 1;
+    alert(`Too low! You have ${4 - wrong} guesses remaining`);
+  }
+  else if(parseInt(answer)){
+    wrong = wrong + 1;
+    alert(`Too high! You have ${4 - wrong} guesses remaining`);
+  }
+  i = i+1;
+}
+if (wrong === 4){
+  console.log('The correct answer was 23!');
+}
+
+//question 7
+//array to store possible answers
+//for loops: 1. To count chances 2. To loop through the array, comparing the users guess with list of accepted answer
+let sbCorrect = 0;
+let answerPossibilities = ['36', '38', '39', '49', '51', '53', '55'];
+alert('Tom Brady Quiz alert');
+for (let k = 0; k < 6; k++){
+  answer = prompt(`Guess ${k + 1}`)
+  for (let j = 0; j < answerPossibilities.length; j++){
+    if (answer === answerPossibilities[j]){
+      console.log('Correct Super Bowl Guessed');
+      sbCorrect = sbCorrect +1;
+      console.log(sbCorrect);
+    }
+  }
+}
+console.log(`You answered ${sbCorrect} correct!`);
+
 
 
 
