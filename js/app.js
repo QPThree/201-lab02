@@ -1,5 +1,9 @@
 'use strict';
 let globalCorrect = 0;
+let answerBank = ['y',
+  'yes',
+  'n',
+  'no'];
 let userName = prompt('Hello Please enter your name!');
 alert('You are about to take a Quiz about me, Quen.  All questions are yes or no answers.  Please answer as such!');
 
@@ -9,16 +13,16 @@ while (userName === null || userName === ''){
   userName = prompt('Please enter a valid userName');
 }
 
-
+//first 5 questions about-me
 let answer = prompt('Is Quen from Maine?');
 answer = answer.toLowerCase();
 //question1
-if (answer === 'n' || answer === 'no'){
+if (answer === answerBank[2] || answer === answerBank[3]){
   //console.log('correct');
   globalCorrect = globalCorrect + 1;
   alert('You got it correct, ' + userName + '!');
 }
-else if (answer === 'y' || answer === 'yes'){
+else if (answer === answerBank[0] || answer === answerBank[1]){
   //console.log('Wrong');
   alert('Ouch! Better luck on the next one.');
 }
@@ -31,12 +35,12 @@ else{
 //question2
 answer = prompt('Did Quen go to the University of New Hampshire?');
 answer = answer.toLowerCase();
-if (answer === 'y' || answer === 'yes'){
+if (answer === answerBank[0] || answer === answerBank[1]){
   //console.log('correct');
   globalCorrect = globalCorrect + 1;
   alert('You got it correct, ' + userName + '!');
 }
-else if (answer === 'n' || answer === 'no'){
+else if (answer === answerBank[2] || answer === answerBank[3]){
   //console.log('Wrong');
   alert('Ouch! Better luck on the next one.');
 }
@@ -48,12 +52,12 @@ else{
 //question3
 answer = prompt('Is Quen planning to take Javascript 401?');
 answer = answer.toLowerCase();
-if (answer === 'n' || answer === 'no'){
+if (answer === answerBank[2] || answer === answerBank[3]){
   //console.log('correct');
   globalCorrect = globalCorrect + 1;
   alert('You got it correct, ' + userName + '!');
 }
-else if (answer === 'y' || answer === 'yes'){
+else if (answer === answerBank[0] || answer === answerBank[1]){
   //console.log('Wrong');
   alert('Ouch! Better luck on the next one.');
 }else{
@@ -64,13 +68,13 @@ else if (answer === 'y' || answer === 'yes'){
 //question4
 answer = prompt('Did Quen mention snowboarding?');
 answer = answer.toLowerCase();
-if (answer === 'n' || answer === 'no'){
+if (answer === answerBank[2] || answer === answerBank[3]){
   console.log('correct');
   //correct = correct + 1;
   globalCorrect = globalCorrect + 1;
   alert('You got it correct, ' + userName + '!');
 }
-else if (answer === 'y' || answer === 'yes'){
+else if (answer === answerBank[0] || answer === answerBank[1]){
   //console.log('Wrong');
   alert('Ouch! Better luck on the next one.');
 }else{
@@ -81,12 +85,12 @@ else if (answer === 'y' || answer === 'yes'){
 //question5
 answer = prompt('Was Quen\'s major kinesiology?');
 answer = answer.toLowerCase();
-if (answer === 'y' || answer === 'yes'){
+if (answer === answerBank[0] || answer === answerBank[1]){
   //console.log('correct');
   globalCorrect = globalCorrect + 1;
   alert('You got it correct, ' + userName + '!');
 }
-else if (answer === 'n' || answer === 'no'){
+else if (answer === answerBank[2] || answer === answerBank[3]){
   //console.log('Wrong');
   alert('Ouch! Better luck on the next one.');
 }
