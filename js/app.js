@@ -18,12 +18,12 @@ let answer = prompt('Is Quen from Maine?');
 answer = answer.toLowerCase();
 //question1
 if (answer === answerBank[2] || answer === answerBank[3]){
-  //console.log('correct');
+  console.log('correct');
   globalCorrect = globalCorrect + 1;
   alert('You got it correct, ' + userName + '!');
 }
 else if (answer === answerBank[0] || answer === answerBank[1]){
-  //console.log('Wrong');
+  console.log('Wrong');
   alert('Ouch! Better luck on the next one.');
 }
 else{
@@ -36,12 +36,12 @@ else{
 answer = prompt('Did Quen go to the University of New Hampshire?');
 answer = answer.toLowerCase();
 if (answer === answerBank[0] || answer === answerBank[1]){
-  //console.log('correct');
+  console.log('correct');
   globalCorrect = globalCorrect + 1;
   alert('You got it correct, ' + userName + '!');
 }
 else if (answer === answerBank[2] || answer === answerBank[3]){
-  //console.log('Wrong');
+  console.log('Wrong');
   alert('Ouch! Better luck on the next one.');
 }
 else{
@@ -53,12 +53,12 @@ else{
 answer = prompt('Is Quen planning to take Javascript 401?');
 answer = answer.toLowerCase();
 if (answer === answerBank[2] || answer === answerBank[3]){
-  //console.log('correct');
+  console.log('correct');
   globalCorrect = globalCorrect + 1;
   alert('You got it correct, ' + userName + '!');
 }
 else if (answer === answerBank[0] || answer === answerBank[1]){
-  //console.log('Wrong');
+  console.log('Wrong');
   alert('Ouch! Better luck on the next one.');
 }else{
   //console.log('Non accepted answer submitted');
@@ -75,7 +75,7 @@ if (answer === answerBank[2] || answer === answerBank[3]){
   alert('You got it correct, ' + userName + '!');
 }
 else if (answer === answerBank[0] || answer === answerBank[1]){
-  //console.log('Wrong');
+  console.log('Wrong');
   alert('Ouch! Better luck on the next one.');
 }else{
   //console.log('Non accepted answer submitted');
@@ -86,12 +86,12 @@ else if (answer === answerBank[0] || answer === answerBank[1]){
 answer = prompt('Was Quen\'s major kinesiology?');
 answer = answer.toLowerCase();
 if (answer === answerBank[0] || answer === answerBank[1]){
-  //console.log('correct');
+  console.log('correct');
   globalCorrect = globalCorrect + 1;
   alert('You got it correct, ' + userName + '!');
 }
 else if (answer === answerBank[2] || answer === answerBank[3]){
-  //console.log('Wrong');
+  console.log('Wrong');
   alert('Ouch! Better luck on the next one.');
 }
 else{
@@ -112,23 +112,25 @@ alert('Next, you have 4 chances to guess what age I finished college!');
 while (wrong !== 4 && correctAge === 0){
   answer = prompt(`Guess ${i}:`);
   if (parseInt(answer) === 23){
-    console.log('Answer Guessed Correctly');
+    console.log('Correct');
     alert('Nicely Done!');
     correctAge = 1;
     globalCorrect = globalCorrect + 1;
   }
   else if(parseInt(answer) < 23){
     wrong = wrong + 1;
+    console.log('Wrong');
     alert(`Too low! You have ${4 - wrong} guesses remaining`);
   }
   else if(parseInt(answer)){
     wrong = wrong + 1;
+    console.log('Wrong');
     alert(`Too high! You have ${4 - wrong} guesses remaining`);
-  } 
+  }
   i = i+1;
 }
 if (wrong === 4){
-  console.log('The correct answer was 23!');
+  console.log('4 wrong the correct answer was 23!');
   alert('Too bad, the correct answer was 23!');
 }
 
