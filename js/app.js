@@ -5,17 +5,17 @@ let answerBank = ['y',
   'n',
   'no'];
 let userName = prompt('Hello Please enter your name!');
-alert('You are about to take a Quiz about me, Quen.  All questions are yes or no answers.  Please answer as such!');
-
+alert('You are about to take a Quiz about me, Quen.  All questions are yes or no answers.  Please answer as such (yes / y or  no / n!');
 
 //verify username
 while (userName === null || userName === ''){
   userName = prompt('Please enter a valid userName');
 }
 
-//first 5 questions about-me
+//begin initial 5 questions quiz
 let answer = prompt('Is Quen from Maine?');
 answer = answer.toLowerCase();
+
 //question1
 if (answer === answerBank[2] || answer === answerBank[3]){
   console.log('correct');
@@ -30,7 +30,6 @@ else{
   //console.log('Non accepted answer submitted');
   alert('Wow, really?');
 }
-
 
 //question2
 answer = prompt('Did Quen go to the University of New Hampshire?');
@@ -139,7 +138,7 @@ if (wrong === 4){
 //for loops: 1. To count chances 2. To loop through the array, comparing the users guess with list of accepted answer
 
 let answerPossibilities = ['36', '38', '39', '49', '51', '53', '55'];
-alert('Tom Brady Has won 7 Super Bowls.  Super Bowls are numbered from 1-55 (and counting).  Guess which Super Bowls Tom has won by entering integers between 1 and 55.  Go luck!');
+alert('Tom Brady Has won 7 Super Bowls.  Super Bowls are numbered from 1-55 (and counting).  Guess which Super Bowls Tom has won by entering integers between 1 and 55.  You have 6 guesses to get ONE correct. Go luck!');
 for (let k = 0; k < 6; k++){
   answer = prompt(`Guess ${k + 1}`);
   for (let j = 0; j < answerPossibilities.length; j++){
