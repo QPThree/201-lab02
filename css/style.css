@@ -18,6 +18,10 @@ h2 {
     margin-bottom: 5%;
 }
 
+ol.nfl{
+    margin-top: 3%;
+}
+
 ul {
     list-style-position: inside;
     list-style: square;
