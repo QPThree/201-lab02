@@ -36,7 +36,7 @@ q1();
 
 
 //question2
-fuction q2(){
+function q2(){
   let answer = prompt('Did Quen go to the University of New Hampshire?');
   answer = answer.toLowerCase();
   if (answer === answerBank[0] || answer === answerBank[1]){
@@ -122,13 +122,13 @@ q5();
 //question 6
 //for loop track number of guesses
 //had to convert answer to int via parseint for the strictly equals 23 requirement
-fuction q6(){
+function q6(){
   let wrong = 0;
   let correctAge = 0;
   let i = 1;
   alert('Next, you have 4 chances to guess what age I finished college!');
   while (wrong !== 4 && correctAge === 0){
-    answer = prompt(`Guess ${i}:`);
+    let answer = prompt(`Guess ${i}:`);
     if (parseInt(answer) === 23){
       console.log('Correct');
       alert('Nicely Done!');
