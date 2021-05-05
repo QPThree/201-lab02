@@ -136,7 +136,6 @@ if (wrong === 4){
 //question 7
 //array to store possible answers
 //for loops: 1. To count chances 2. To loop through the array, comparing the users guess with list of accepted answer
-
 let answerPossibilities = ['36', '38', '39', '49', '51', '53', '55'];
 alert('Tom Brady Has won 7 Super Bowls.  Super Bowls are numbered from 1-55 (and counting).  Guess which Super Bowls Tom has won by entering integers between 1 and 55.  You have 6 guesses to get ONE correct. Go luck!');
 for (let k = 0; k < 6; k++){
