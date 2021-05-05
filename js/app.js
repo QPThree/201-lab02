@@ -36,21 +36,25 @@ q1();
 
 
 //question2
-answer = prompt('Did Quen go to the University of New Hampshire?');
-answer = answer.toLowerCase();
-if (answer === answerBank[0] || answer === answerBank[1]){
-  console.log('correct');
-  globalCorrect = globalCorrect + 1;
-  alert('You got it correct, ' + userName + '!');
+fuction q2(){
+  let answer = prompt('Did Quen go to the University of New Hampshire?');
+  answer = answer.toLowerCase();
+  if (answer === answerBank[0] || answer === answerBank[1]){
+    console.log('correct');
+    globalCorrect = globalCorrect + 1;
+    alert('You got it correct, ' + userName + '!');
+  }
+  else if (answer === answerBank[2] || answer === answerBank[3]){
+    console.log('Wrong');
+    alert('Ouch! Better luck on the next one.');
+  }
+  else{
+    //console.log('Non accepted answer submitted');
+    alert('Wow, really?');
+  }
 }
-else if (answer === answerBank[2] || answer === answerBank[3]){
-  console.log('Wrong');
-  alert('Ouch! Better luck on the next one.');
-}
-else{
-  //console.log('Non accepted answer submitted');
-  alert('Wow, really?');
-}
+q2();
+
 
 //question3
 answer = prompt('Is Quen planning to take Javascript 401?');
