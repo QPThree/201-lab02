@@ -13,23 +13,27 @@ while (userName === null || userName === ''){
 }
 
 //begin initial 5 questions quiz
-let answer = prompt('Is Quen from Maine?');
-answer = answer.toLowerCase();
+function q1 (){
+  let answer = prompt('Is Quen from Maine?');
+  answer = answer.toLowerCase();
+  
+  //question1
+  if (answer === answerBank[2] || answer === answerBank[3]){
+    console.log('correct');
+    globalCorrect = globalCorrect + 1;
+    alert('You got it correct, ' + userName + '!');
+  }
+  else if (answer === answerBank[0] || answer === answerBank[1]){
+    console.log('Wrong');
+    alert('Ouch! Better luck on the next one.');
+  }
+  else{
+    //console.log('Non accepted answer submitted');
+    alert('Wow, really?');
+  }
+}
+q1();
 
-//question1
-if (answer === answerBank[2] || answer === answerBank[3]){
-  console.log('correct');
-  globalCorrect = globalCorrect + 1;
-  alert('You got it correct, ' + userName + '!');
-}
-else if (answer === answerBank[0] || answer === answerBank[1]){
-  console.log('Wrong');
-  alert('Ouch! Better luck on the next one.');
-}
-else{
-  //console.log('Non accepted answer submitted');
-  alert('Wow, really?');
-}
 
 //question2
 answer = prompt('Did Quen go to the University of New Hampshire?');
