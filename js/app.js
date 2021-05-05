@@ -122,34 +122,38 @@ q5();
 //question 6
 //for loop track number of guesses
 //had to convert answer to int via parseint for the strictly equals 23 requirement
-let wrong = 0;
-let correctAge = 0;
-let i = 1;
-alert('Next, you have 4 chances to guess what age I finished college!');
-while (wrong !== 4 && correctAge === 0){
-  answer = prompt(`Guess ${i}:`);
-  if (parseInt(answer) === 23){
-    console.log('Correct');
-    alert('Nicely Done!');
-    correctAge = 1;
-    globalCorrect = globalCorrect + 1;
+fuction q6(){
+  let wrong = 0;
+  let correctAge = 0;
+  let i = 1;
+  alert('Next, you have 4 chances to guess what age I finished college!');
+  while (wrong !== 4 && correctAge === 0){
+    answer = prompt(`Guess ${i}:`);
+    if (parseInt(answer) === 23){
+      console.log('Correct');
+      alert('Nicely Done!');
+      correctAge = 1;
+      globalCorrect = globalCorrect + 1;
+    }
+    else if(parseInt(answer) < 23){
+      wrong = wrong + 1;
+      console.log('Wrong');
+      alert(`Too low! You have ${4 - wrong} guesses remaining`);
+    }
+    else if(parseInt(answer)){
+      wrong = wrong + 1;
+      console.log('Wrong');
+      alert(`Too high! You have ${4 - wrong} guesses remaining`);
+    }
+    i = i+1;
   }
-  else if(parseInt(answer) < 23){
-    wrong = wrong + 1;
-    console.log('Wrong');
-    alert(`Too low! You have ${4 - wrong} guesses remaining`);
+  if (wrong === 4){
+    console.log('4 wrong the correct answer was 23!');
+    alert('Too bad, the correct answer was 23!');
   }
-  else if(parseInt(answer)){
-    wrong = wrong + 1;
-    console.log('Wrong');
-    alert(`Too high! You have ${4 - wrong} guesses remaining`);
-  }
-  i = i+1;
 }
-if (wrong === 4){
-  console.log('4 wrong the correct answer was 23!');
-  alert('Too bad, the correct answer was 23!');
-}
+q6();
+
 
 //question 7
 //array to store possible answers
