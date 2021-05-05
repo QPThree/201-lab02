@@ -97,23 +97,26 @@ q4();
 
 
 //question5
-answer = prompt('Was Quen\'s major kinesiology?');
-answer = answer.toLowerCase();
-if (answer === answerBank[0] || answer === answerBank[1]){
-  console.log('correct');
-  globalCorrect = globalCorrect + 1;
-  alert('You got it correct, ' + userName + '!');
+function q5(){
+  let answer = prompt('Was Quen\'s major kinesiology?');
+  answer = answer.toLowerCase();
+  if (answer === answerBank[0] || answer === answerBank[1]){
+    console.log('correct');
+    globalCorrect = globalCorrect + 1;
+    alert('You got it correct, ' + userName + '!');
+  }
+  else if (answer === answerBank[2] || answer === answerBank[3]){
+    console.log('Wrong');
+    alert('Ouch! Better luck on the next one.');
+  }
+  else{
+    //console.log('Non accepted answer submitted');
+    alert('Wow, really?');
+  }
+  //console.log(userName + ', your score:', correct);
+  alert(`${userName}, your score so far: ${globalCorrect}`);
 }
-else if (answer === answerBank[2] || answer === answerBank[3]){
-  console.log('Wrong');
-  alert('Ouch! Better luck on the next one.');
-}
-else{
-  //console.log('Non accepted answer submitted');
-  alert('Wow, really?');
-}
-//console.log(userName + ', your score:', correct);
-alert(`${userName}, your score so far: ${globalCorrect}`);
+q5();
 
 
 //question 6
