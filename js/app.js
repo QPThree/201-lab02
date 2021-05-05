@@ -76,21 +76,25 @@ function q3(){
 q3();
 
 //question4
-answer = prompt('Did Quen mention snowboarding?');
-answer = answer.toLowerCase();
-if (answer === answerBank[2] || answer === answerBank[3]){
-  console.log('correct');
-  //correct = correct + 1;
-  globalCorrect = globalCorrect + 1;
-  alert('You got it correct, ' + userName + '!');
+function q4(){
+  let answer = prompt('Did Quen mention snowboarding?');
+  answer = answer.toLowerCase();
+  if (answer === answerBank[2] || answer === answerBank[3]){
+    console.log('correct');
+    //correct = correct + 1;
+    globalCorrect = globalCorrect + 1;
+    alert('You got it correct, ' + userName + '!');
+  }
+  else if (answer === answerBank[0] || answer === answerBank[1]){
+    console.log('Wrong');
+    alert('Ouch! Better luck on the next one.');
+  }else{
+    //console.log('Non accepted answer submitted');
+    alert('Wow, really?');
+  }
 }
-else if (answer === answerBank[0] || answer === answerBank[1]){
-  console.log('Wrong');
-  alert('Ouch! Better luck on the next one.');
-}else{
-  //console.log('Non accepted answer submitted');
-  alert('Wow, really?');
-}
+q4();
+
 
 //question5
 answer = prompt('Was Quen\'s major kinesiology?');
