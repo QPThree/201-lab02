@@ -158,22 +158,26 @@ q6();
 //question 7
 //array to store possible answers
 //for loops: 1. To count chances 2. To loop through the array, comparing the users guess with list of accepted answer
-let answerPossibilities = ['36', '38', '39', '49', '51', '53', '55'];
-alert('Tom Brady Has won 7 Super Bowls.  Super Bowls are numbered from 1-55 (and counting).  Guess which Super Bowls Tom has won by entering integers between 1 and 55.  You have 6 guesses to get ONE correct. Go luck!');
-for (let k = 0; k < 6; k++){
-  answer = prompt(`Guess ${k + 1}`);
-  for (let j = 0; j < answerPossibilities.length; j++){
-    if (answer === answerPossibilities[j]){
-      console.log('Correct Super Bowl Guessed');
-      alert('Correct! Nicely done.');
-      globalCorrect = globalCorrect + 1;
-      console.log(globalCorrect);
-      k = 10; //sets k to 10 to break the loop.  Couldnt get 'break;' to work
+function q7(){
+  let answerPossibilities = ['36', '38', '39', '49', '51', '53', '55'];
+  alert('Tom Brady Has won 7 Super Bowls.  Super Bowls are numbered from 1-55 (and counting).  Guess which Super Bowls Tom has won by entering integers between 1 and 55.  You have 6 guesses to get ONE correct. Go luck!');
+  for (let k = 0; k < 6; k++){
+    let answer = prompt(`Guess ${k + 1}`);
+    for (let j = 0; j < answerPossibilities.length; j++){
+      if (answer === answerPossibilities[j]){
+        console.log('Correct Super Bowl Guessed');
+        alert('Correct! Nicely done.');
+        globalCorrect = globalCorrect + 1;
+        console.log(globalCorrect);
+        k = 10; //sets k to 10 to break the loop.  Couldnt get 'break;' to work
+      }
     }
   }
+  alert(`Correct answers were: ${answerPossibilities}`);
+  alert(`Your total correct out of 7 questions is: ${globalCorrect}`);
 }
-alert(`Correct answers were: ${answerPossibilities}`);
-alert(`Your total correct out of 7 questions is: ${globalCorrect}`);
+q7();
+
 
 
 
