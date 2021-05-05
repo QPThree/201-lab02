@@ -1,18 +1,24 @@
 'use strict';
+
+//---global variables declared ---
 let globalCorrect = 0;
 let answerBank = ['y',
   'yes',
   'n',
   'no'];
-let userName = prompt('Hello Please enter your name!');
-alert('You are about to take a Quiz about me, Quen.  All questions are yes or no answers.  Please answer as such (yes / y or  no / n!');
+let userName;
+
+
+//---functions declared----
 
 //verify username
-while (userName === null || userName === ''){
-  userName = prompt('Please enter a valid userName');
+function verifyName(name){
+  while (name === null || name === ''){
+    name = prompt('Please enter a valid userName');
+  }
+  userName = name;
 }
-
-//begin initial 5 questions quiz
+//question1
 function q1 (){
   let answer = prompt('Is Quen from Maine?');
   answer = answer.toLowerCase();
@@ -32,9 +38,6 @@ function q1 (){
     alert('Wow, really?');
   }
 }
-q1();
-
-
 //question2
 function q2(){
   let answer = prompt('Did Quen go to the University of New Hampshire?');
@@ -53,9 +56,6 @@ function q2(){
     alert('Wow, really?');
   }
 }
-q2();
-
-
 //question3
 function q3(){
   let answer = prompt('Is Quen planning to take Javascript 401?');
@@ -73,8 +73,6 @@ function q3(){
     alert('Wow, really?');
   }
 }
-q3();
-
 //question4
 function q4(){
   let answer = prompt('Did Quen mention snowboarding?');
@@ -93,9 +91,6 @@ function q4(){
     alert('Wow, really?');
   }
 }
-q4();
-
-
 //question5
 function q5(){
   let answer = prompt('Was Quen\'s major kinesiology?');
@@ -116,9 +111,6 @@ function q5(){
   //console.log(userName + ', your score:', correct);
   alert(`${userName}, your score so far: ${globalCorrect}`);
 }
-q5();
-
-
 //question 6
 //for loop track number of guesses
 //had to convert answer to int via parseint for the strictly equals 23 requirement
@@ -152,9 +144,6 @@ function q6(){
     alert('Too bad, the correct answer was 23!');
   }
 }
-q6();
-
-
 //question 7
 //array to store possible answers
 //for loops: 1. To count chances 2. To loop through the array, comparing the users guess with list of accepted answer
@@ -176,10 +165,18 @@ function q7(){
   alert(`Correct answers were: ${answerPossibilities}`);
   alert(`Your total correct out of 7 questions is: ${globalCorrect}`);
 }
+
+//---script runs in this order---
+alert('You are about to take a Quiz about me, Quen.  All questions are yes or no answers.  Please answer as such (yes / y or  no / n!');
+userName = prompt('Hello Please enter your name!');
+verifyName(userName);
+q1();
+q2();
+q3();
+q4();
+q5();
+q6();
 q7();
-
-
-
 
 
 
