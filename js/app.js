@@ -57,20 +57,23 @@ q2();
 
 
 //question3
-answer = prompt('Is Quen planning to take Javascript 401?');
-answer = answer.toLowerCase();
-if (answer === answerBank[2] || answer === answerBank[3]){
-  console.log('correct');
-  globalCorrect = globalCorrect + 1;
-  alert('You got it correct, ' + userName + '!');
+function q3(){
+  let answer = prompt('Is Quen planning to take Javascript 401?');
+  answer = answer.toLowerCase();
+  if (answer === answerBank[2] || answer === answerBank[3]){
+    console.log('correct');
+    globalCorrect = globalCorrect + 1;
+    alert('You got it correct, ' + userName + '!');
+  }
+  else if (answer === answerBank[0] || answer === answerBank[1]){
+    console.log('Wrong');
+    alert('Ouch! Better luck on the next one.');
+  }else{
+    //console.log('Non accepted answer submitted');
+    alert('Wow, really?');
+  }
 }
-else if (answer === answerBank[0] || answer === answerBank[1]){
-  console.log('Wrong');
-  alert('Ouch! Better luck on the next one.');
-}else{
-  //console.log('Non accepted answer submitted');
-  alert('Wow, really?');
-}
+q3();
 
 //question4
 answer = prompt('Did Quen mention snowboarding?');
