@@ -14,7 +14,7 @@ Finally, at the end, the user is given their score.
 
 The page has main blocks of information down the center of the page that give the user information about me.  Answers to the quiz question can be found in these blocks.  
 
-### Author: Quentin P Young III
+### Author: Quentin P Young III, Brian Nelson
 
 ### Collaborators
 
