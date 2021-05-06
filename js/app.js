@@ -19,10 +19,10 @@ function verifyName(name){
   userName = name;
 }
 //question1
-function q1 (){
+function mainQuiz(){
   let answer = prompt('Is Quen from Maine?');
   answer = answer.toLowerCase();
-  
+
   //question1
   if (answer === answerBank[2] || answer === answerBank[3]){
     console.log('correct');
@@ -37,11 +37,8 @@ function q1 (){
     //console.log('Non accepted answer submitted');
     alert('Wow, really?');
   }
-}
-//question2
-function q2(){
-  let answer = prompt('Did Quen go to the University of New Hampshire?');
-  answer = answer.toLowerCase();
+  //question 2
+  answer = prompt('Did Quen go to the University of New Hampshire?').toLowerCase();
   if (answer === answerBank[0] || answer === answerBank[1]){
     console.log('correct');
     globalCorrect = globalCorrect + 1;
@@ -55,11 +52,8 @@ function q2(){
     //console.log('Non accepted answer submitted');
     alert('Wow, really?');
   }
-}
-//question3
-function q3(){
-  let answer = prompt('Is Quen planning to take Javascript 401?');
-  answer = answer.toLowerCase();
+  //question 3
+  answer = prompt('Is Quen planning to take Javascript 401?').toLowerCase();
   if (answer === answerBank[2] || answer === answerBank[3]){
     console.log('correct');
     globalCorrect = globalCorrect + 1;
@@ -72,11 +66,8 @@ function q3(){
     //console.log('Non accepted answer submitted');
     alert('Wow, really?');
   }
-}
-//question4
-function q4(){
-  let answer = prompt('Did Quen mention snowboarding?');
-  answer = answer.toLowerCase();
+  //question 4
+  answer = prompt('Did Quen mention snowboarding?').toLowerCase();
   if (answer === answerBank[2] || answer === answerBank[3]){
     console.log('correct');
     //correct = correct + 1;
@@ -90,11 +81,7 @@ function q4(){
     //console.log('Non accepted answer submitted');
     alert('Wow, really?');
   }
-}
-//question5
-function q5(){
-  let answer = prompt('Was Quen\'s major kinesiology?');
-  answer = answer.toLowerCase();
+  answer = prompt('Was Quen\'s major kinesiology?').toLowerCase();
   if (answer === answerBank[0] || answer === answerBank[1]){
     console.log('correct');
     globalCorrect = globalCorrect + 1;
@@ -111,6 +98,9 @@ function q5(){
   //console.log(userName + ', your score:', correct);
   alert(`${userName}, your score so far: ${globalCorrect}`);
 }
+
+
+// }
 //question 6
 //for loop track number of guesses
 //had to convert answer to int via parseint for the strictly equals 23 requirement
@@ -170,11 +160,7 @@ function q7(){
 alert('You are about to take a Quiz about me, Quen.  All questions are yes or no answers.  Please answer as such (yes / y or  no / n!');
 userName = prompt('Hello Please enter your name!');
 verifyName(userName);
-q1();
-q2();
-q3();
-q4();
-q5();
+mainQuiz();
 q6();
 q7();
 
