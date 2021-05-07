@@ -31,10 +31,18 @@ ul {
 ol {
     list-style-type: lower-roman;
 }
-
+li :hover{
+    background-color: gray;
+    color: #fff;
+}
 .nfl{
     margin-left:2%;
     position:fixed;
+}
+
+.nfl :hover{
+    background-color: grey;
+    color:#fff;
 }
 
 .main-header{
