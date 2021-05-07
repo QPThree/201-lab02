@@ -32,7 +32,7 @@ ol {
     list-style-type: lower-roman;
 }
 
-. nfl li :hover{
+.nfl li :hover{
     background-color: gray;
     color: #fff;
 }
