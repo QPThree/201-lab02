@@ -93,11 +93,10 @@ function mainQuiz(){
 //for loop track number of guesses
 //had to convert answer to int via parseint for the strictly equals 23 requirement
 function q6(){
-  let wrong = 0;
   let correctAge = false;
   let i = 1;
   alert('Next, you have 4 chances to guess what age I finished college!');
-  while (wrong !== 4 && correctAge === false){
+  while (i < 5 && !correctAge){
     let answer = prompt(`Guess ${i}:`);
     if (parseInt(answer) === answerBank[4]){
       alert('Nicely Done!');
@@ -105,16 +104,18 @@ function q6(){
       globalCorrect = globalCorrect + 1;
     }
     else if(parseInt(answer) < answerBank[4]){
-      wrong = wrong + 1;
-      alert(`Too low! You have ${4 - wrong} guesses remaining`);
+      i++;
+      alert(`Too low! You have ${5 - i} guesses remaining`);
     }
     else if(parseInt(answer)){
-      wrong = wrong + 1;
-      alert(`Too high! You have ${4 - wrong} guesses remaining`);
+      i++;
+      alert(`Too high! You have ${5 - i} guesses remaining`);
     }
-    i = i+1;
+    else{
+      i = i+1;
+    }
   }
-  if (wrong === 4){
+  if (i === 5){
     alert('Too bad, the correct answer was 23!');
   }
 }
