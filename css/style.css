@@ -1,5 +1,7 @@
 
 html{
+    /* Photo by <a href="https://unsplash.com/@wsokolowskij?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Wladislaw Sokolowskij</a> on <a href="https://unsplash.com/s/photos/white?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   */
     background: url("../img/white1.jpg") no-repeat center center fixed;
     background-size: cover;
     height: 100%;
