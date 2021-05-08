@@ -26,12 +26,10 @@ function mainQuiz(){
 
   //question1
   if (answer === answerBank[2] || answer === answerBank[3]){
-    console.log('correct');
     globalCorrect = globalCorrect + 1;
     alert('You got it correct, ' + userName + '!');
   }
   else if (answer === answerBank[0] || answer === answerBank[1]){
-    console.log('Wrong');
     alert('Ouch! Better luck on the next one.');
   }
   else{
@@ -41,12 +39,10 @@ function mainQuiz(){
   //question 2
   answer = prompt('Did Quen go to the University of New Hampshire?').toLowerCase();
   if (answer === answerBank[0] || answer === answerBank[1]){
-    console.log('correct');
     globalCorrect = globalCorrect + 1;
     alert('You got it correct, ' + userName + '!');
   }
   else if (answer === answerBank[2] || answer === answerBank[3]){
-    console.log('Wrong');
     alert('Ouch! Better luck on the next one.');
   }
   else{
@@ -56,12 +52,10 @@ function mainQuiz(){
   //question 3
   answer = prompt('Is Quen planning to take Javascript 401?').toLowerCase();
   if (answer === answerBank[2] || answer === answerBank[3]){
-    console.log('correct');
     globalCorrect = globalCorrect + 1;
     alert('You got it correct, ' + userName + '!');
   }
   else if (answer === answerBank[0] || answer === answerBank[1]){
-    console.log('Wrong');
     alert('Ouch! Better luck on the next one.');
   }else{
     //console.log('Non accepted answer submitted');
@@ -70,13 +64,11 @@ function mainQuiz(){
   //question 4
   answer = prompt('Did Quen mention snowboarding?').toLowerCase();
   if (answer === answerBank[2] || answer === answerBank[3]){
-    console.log('correct');
     //correct = correct + 1;
     globalCorrect = globalCorrect + 1;
     alert('You got it correct, ' + userName + '!');
   }
   else if (answer === answerBank[0] || answer === answerBank[1]){
-    console.log('Wrong');
     alert('Ouch! Better luck on the next one.');
   }else{
     //console.log('Non accepted answer submitted');
@@ -84,12 +76,10 @@ function mainQuiz(){
   }
   answer = prompt('Was Quen\'s major kinesiology?').toLowerCase();
   if (answer === answerBank[0] || answer === answerBank[1]){
-    console.log('correct');
     globalCorrect = globalCorrect + 1;
     alert('You got it correct, ' + userName + '!');
   }
   else if (answer === answerBank[2] || answer === answerBank[3]){
-    console.log('Wrong');
     alert('Ouch! Better luck on the next one.');
   }
   else{
@@ -110,25 +100,21 @@ function q6(){
   while (wrong !== 4 && correctAge === false){
     let answer = prompt(`Guess ${i}:`);
     if (parseInt(answer) === answerBank[4]){
-      console.log('Correct');
       alert('Nicely Done!');
       correctAge = true;
       globalCorrect = globalCorrect + 1;
     }
     else if(parseInt(answer) < answerBank[4]){
       wrong = wrong + 1;
-      console.log('Wrong');
       alert(`Too low! You have ${4 - wrong} guesses remaining`);
     }
     else if(parseInt(answer)){
       wrong = wrong + 1;
-      console.log('Wrong');
       alert(`Too high! You have ${4 - wrong} guesses remaining`);
     }
     i = i+1;
   }
   if (wrong === 4){
-    console.log('4 wrong the correct answer was 23!');
     alert('Too bad, the correct answer was 23!');
   }
 }
@@ -141,10 +127,8 @@ function q7(){
     let answer = prompt(`Guess ${k + 1}`);
     for (let j = 0; j < 7; j++){
       if (answer === answerBank[5][j]){
-        console.log('Correct Super Bowl Guessed');
         alert('Correct! Nicely done.');
         globalCorrect = globalCorrect + 1;
-        console.log(globalCorrect);
         k = 10; //sets k to 10 to break the loop.  Couldnt get 'break;' to work
       }
     }
