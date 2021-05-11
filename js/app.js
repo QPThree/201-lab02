@@ -138,9 +138,12 @@ function q7(){
   alert(`Your total correct out of 7 questions is: ${globalCorrect}`);
 }
 //---script runs in this order---
-alert('You are about to take a Quiz about me, Quen.  All questions are yes or no answers.  Please answer as such (yes / y or  no / n!)');
-userName = prompt('Hello Please enter your name!');
-verifyName(userName);
-mainQuiz();
-q6();
-q7();
+
+function fullQuiz(){
+  alert('You are about to take a Quiz about me, Quen.  All questions are yes or no answers.  Please answer as such (yes / y or  no / n!)');
+  userName = prompt('Hello Please enter your name!');
+  verifyName(userName);
+  mainQuiz();
+  q6();
+  q7();
+}
