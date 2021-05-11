@@ -2,7 +2,7 @@
 
 ## About Me
 
-About-me app prompts the user with 5 yes or no questions "about-me".  The user will have entered a username which the program will occassionally use to address the user.  
+About-me app prompts the user with 5 yes or no questions "about-me".  The user will have entered a username which the program will occassionally use to address the user. Quiz is activated with an "on-click" event button at bottom of the page.  
 
 The initial quiz consists of 5 basic questions 'About-Me'.  A global varial is used to keep track of the users answers through the experience of this page.  
 
