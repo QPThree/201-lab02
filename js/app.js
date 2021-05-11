@@ -137,8 +137,7 @@ function q7(){
   alert(`Correct answers were: ${answerBank[5]}`);
   alert(`Your total correct out of 7 questions is: ${globalCorrect}`);
 }
-//---script runs in this order---
-
+//---Full quiz runs on click from index.html ---
 function fullQuiz(){
   alert('You are about to take a Quiz about me, Quen.  All questions are yes or no answers.  Please answer as such (yes / y or  no / n!)');
   userName = prompt('Hello Please enter your name!');
